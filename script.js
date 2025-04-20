@@ -39,7 +39,9 @@ const navMenu = document.getElementById("navMenu");
 
 burgerButton.addEventListener("click", function () {
   navMenu.classList.toggle("active");
-  document.body.style.overflow = navMenu.classList.contains("active") ? "hidden" : "auto";
+  document.body.style.overflow = navMenu.classList.contains("active")
+    ? "hidden"
+    : "auto";
 
   const spans = this.querySelectorAll("span");
   if (navMenu.classList.contains("active")) {
@@ -72,16 +74,16 @@ const tabPanes = document.querySelectorAll(".tab-pane");
 tabLinks.forEach((link) => {
   link.addEventListener("click", function () {
     const tabId = this.getAttribute("data-tab");
-    
+
     // Remove active classes
-    tabLinks.forEach(l => l.classList.remove("active"));
-    tabPanes.forEach(pane => {
+    tabLinks.forEach((l) => l.classList.remove("active"));
+    tabPanes.forEach((pane) => {
       pane.style.opacity = "0";
       setTimeout(() => {
         pane.classList.remove("active");
       }, 300);
     });
-    
+
     // Add active classes with animation
     this.classList.add("active");
     const activePane = document.getElementById(tabId);
@@ -100,16 +102,19 @@ const filterItems = document.querySelectorAll(".filter-item");
 filterButtons.forEach((button) => {
   button.addEventListener("click", function () {
     const filterValue = this.getAttribute("data-filter");
-    
-    filterButtons.forEach(btn => btn.classList.remove("active"));
+
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
     this.classList.add("active");
 
     filterItems.forEach((item) => {
       item.style.opacity = "0";
       item.style.transform = "scale(0.8)";
-      
+
       setTimeout(() => {
-        if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
+        if (
+          filterValue === "all" ||
+          item.getAttribute("data-category") === filterValue
+        ) {
           item.style.display = "block";
           setTimeout(() => {
             item.style.opacity = "1";
@@ -143,7 +148,9 @@ function showSlide(index) {
     }, 300);
   });
 
-  document.querySelector(".slides").style.transform = `translateX(-${index * 100}%)`;
+  document.querySelector(".slides").style.transform = `translateX(-${
+    index * 100
+  }%)`;
 }
 
 function nextSlide() {
@@ -210,14 +217,14 @@ accordionHeaders.forEach((header) => {
   });
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(this.getAttribute("href"));
     if (target) {
       target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
     }
   });
@@ -320,7 +327,7 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
     const originalText = this.textContent;
     this.textContent = "Added to Cart!";
     this.disabled = true;
-    
+
     setTimeout(() => {
       this.textContent = originalText;
       this.disabled = false;
@@ -329,7 +336,7 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
 });
 
 // Checkout button click handler
-document.querySelector(".checkout-btn").addEventListener("click", function() {
+document.querySelector(".checkout-btn").addEventListener("click", function () {
   if (cart.items.length === 0) {
     alert("Your cart is empty!");
     return;
