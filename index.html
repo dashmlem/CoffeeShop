@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Coffee Haven - Your Perfect Coffee Experience</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <a href="#">Coffee Haven</a> | <a href="./about.html">About Us</a> |
+        <a href="./contact.html">Contact</a> |
+        <a href="./coffe.html">Order Coffee</a>
+        <burger>
+          <button class="burger-menu" id="burgerButton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-menu" id="navMenu">
+            <a href="#">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./coffe.html">Our Coffee</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </burger>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <h1>Welcome to Coffee Haven</h1>
+        <p>Where every cup tells a story</p>
+        <button id="openModal" class="bttn">View Today's Special</button>
+      </div>
+
+      <!-- Модальное окно -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Today's Special Offer!</h2>
+          <p>
+            Try our signature Caramel Macchiato with homemade caramel sauce
+            for just $4.99!
+          </p>
+          <p>Limited time offer. Visit us today to experience coffee perfection.</p>
+        </div>
+      </div>
+
+      <section class="tabs-section">
+        <h2>Discover Our Menu</h2>
+        <div class="tabs">
+          <div class="tab-header">
+            <div class="tab-link active" data-tab="tab1">Hot Drinks</div>
+            <div class="tab-link" data-tab="tab2">Cold Drinks</div>
+            <div class="tab-link" data-tab="tab3">Desserts</div>
+          </div>
+
+          <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <h3>Espresso</h3>
+                  <p>Rich and bold single shot</p>
+                  <span class="price">$2.99</span>
+                </div>
+                <div class="menu-item">
+                  <h3>Cappuccino</h3>
+                  <p>Perfect balance of espresso and steamed milk</p>
+                  <span class="price">$3.99</span>
+                </div>
+                <div class="menu-item">
+                  <h3>Latte</h3>
+                  <p>Smooth and creamy with a shot of espresso</p>
+                  <span class="price">$4.49</span>
+                </div>
+              </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <h3>Iced Coffee</h3>
+                  <p>Classic cold brew over ice</p>
+                  <span class="price">$3.49</span>
+                </div>
+                <div class="menu-item">
+                  <h3>Frappuccino</h3>
+                  <p>Blended coffee with whipped cream</p>
+                  <span class="price">$4.99</span>
+                </div>
+                <div class="menu-item">
+                  <h3>Iced Latte</h3>
+                  <p>Chilled espresso with cold milk</p>
+                  <span class="price">$4.49</span>
+                </div>
+              </div>
+            </div>
+            <div id="tab3" class="tab-pane">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <h3>Croissant</h3>
+                  <p>Freshly baked butter croissant</p>
+                  <span class="price">$2.99</span>
+                </div>
+                <div class="menu-item">
+                  <h3>Chocolate Muffin</h3>
+                  <p>Rich chocolate with chocolate chips</p>
+                  <span class="price">$3.49</span>
+                </div>
+                <div class="menu-item">
+                  <h3>Cheesecake</h3>
+                  <p>New York style with berry compote</p>
+                  <span class="price">$4.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <h2>Shop Our Coffee Beans</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Beans</button>
+          <button class="filter-btn" data-filter="light">Light Roast</button>
+          <button class="filter-btn" data-filter="medium">Medium Roast</button>
+          <button class="filter-btn" data-filter="dark">Dark Roast</button>
+        </div>
+
+        <div class="filter-items">
+          <div class="filter-item" data-category="light">
+            <h3>Ethiopian Yirgacheffe</h3>
+            <p>Light roast with floral notes</p>
+            <span class="price">$16.99</span>
+          </div>
+          <div class="filter-item" data-category="medium">
+            <h3>Colombian Supremo</h3>
+            <p>Medium roast with caramel sweetness</p>
+            <span class="price">$14.99</span>
+          </div>
+          <div class="filter-item" data-category="dark">
+            <h3>Italian Roast</h3>
+            <p>Dark and bold with chocolate notes</p>
+            <span class="price">$15.99</span>
+          </div>
+          <div class="filter-item" data-category="medium">
+            <h3>Guatemala Antigua</h3>
+            <p>Medium roast with spicy undertones</p>
+            <span class="price">$17.99</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider-section">
+        <h2>Customer Favorites</h2>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide active">
+              <h3>Signature Latte</h3>
+              <p>Our most popular drink with house-made vanilla syrup</p>
+              <span class="rating">★★★★★</span>
+            </div>
+            <div class="slide">
+              <h3>Cold Brew</h3>
+              <p>Smooth and refreshing, steeped for 12 hours</p>
+              <span class="rating">★★★★★</span>
+            </div>
+            <div class="slide">
+              <h3>Mocha Frappuccino</h3>
+              <p>The perfect blend of coffee and chocolate</p>
+              <span class="rating">★★★★½</span>
+            </div>
+          </div>
+          <button class="slider-btn prev">←</button>
+          <button class="slider-btn next">→</button>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">What are your opening hours?</div>
+            <div class="accordion-content">
+              We're open Monday to Friday 7:00 AM - 8:00 PM<br>
+              Saturday and Sunday 8:00 AM - 6:00 PM
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Do you offer gift cards?</div>
+            <div class="accordion-content">
+              Yes! Gift cards are available in-store and online in denominations from $10 to $100.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Are your coffee beans organic?</div>
+            <div class="accordion-content">
+              Yes, all our coffee beans are certified organic and ethically sourced from sustainable farms.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

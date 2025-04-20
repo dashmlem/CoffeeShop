@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Order Coffee - Coffee Haven</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <a href="index.html">Coffee Haven</a> | <a href="./about.html">About Us</a> |
+        <a href="./contact.html">Contact</a> |
+        <a href="./coffe.html">Order Coffee</a>
+        <burger>
+          <button class="burger-menu" id="burgerButton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./coffe.html">Our Coffee</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+        </burger>
+      </div>
+    </header>
+
+    <main>
+      <section class="order-hero">
+        <h1>Order Your Perfect Coffee</h1>
+        <p>Fresh roasted beans delivered to your door</p>
+      </section>
+
+      <section class="order-content">
+        <div class="order-tabs">
+          <div class="tab-header">
+            <div class="tab-link active" data-tab="beans">Coffee Beans</div>
+            <div class="tab-link" data-tab="drinks">Hot Drinks</div>
+            <div class="tab-link" data-tab="cold">Cold Drinks</div>
+          </div>
+
+          <div class="tab-content">
+            <div id="beans" class="tab-pane active">
+              <div class="product-grid">
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Ethiopian Yirgacheffe</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Ethiopian Yirgacheffe</h3>
+                    <p>Light roast with floral notes and citrus undertones</p>
+                    <div class="product-meta">
+                      <span class="price">$16.99</span>
+                      <select class="size-select">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Colombian Supremo</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Colombian Supremo</h3>
+                    <p>Medium roast with caramel sweetness and nutty finish</p>
+                    <div class="product-meta">
+                      <span class="price">$14.99</span>
+                      <select class="size-select">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Italian Roast</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Italian Roast</h3>
+                    <p>Dark roast with intense flavor and chocolate notes</p>
+                    <div class="product-meta">
+                      <span class="price">$15.99</span>
+                      <select class="size-select">
+                        <option value="250g">250g</option>
+                        <option value="500g">500g</option>
+                        <option value="1kg">1kg</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="drinks" class="tab-pane">
+              <div class="product-grid">
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Espresso</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold single shot</p>
+                    <div class="product-meta">
+                      <span class="price">$2.99</span>
+                      <select class="size-select">
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Cappuccino</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Cappuccino</h3>
+                    <p>Perfect balance of espresso and steamed milk</p>
+                    <div class="product-meta">
+                      <span class="price">$3.99</span>
+                      <select class="size-select">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Latte</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Latte</h3>
+                    <p>Smooth and creamy with a shot of espresso</p>
+                    <div class="product-meta">
+                      <span class="price">$4.49</span>
+                      <select class="size-select">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="cold" class="tab-pane">
+              <div class="product-grid">
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Iced Coffee</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Iced Coffee</h3>
+                    <p>Classic cold brew over ice</p>
+                    <div class="product-meta">
+                      <span class="price">$3.49</span>
+                      <select class="size-select">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Frappuccino</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Frappuccino</h3>
+                    <p>Blended coffee with whipped cream</p>
+                    <div class="product-meta">
+                      <span class="price">$4.99</span>
+                      <select class="size-select">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <div class="image-placeholder">Iced Latte</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Iced Latte</h3>
+                    <p>Chilled espresso with cold milk</p>
+                    <div class="product-meta">
+                      <span class="price">$4.49</span>
+                      <select class="size-select">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                    </div>
+                    <button class="bttn add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-section">
+          <h2>Your Cart</h2>
+          <div id="cartItems" class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <p class="empty-cart">Your cart is empty</p>
+          </div>
+          <div class="cart-total">
+            <p>Total: <span id="cartTotal">$0.00</span></p>
+            <button class="bttn checkout-btn">Proceed to Checkout</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
